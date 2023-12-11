@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias COusin - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-left: 80px;
+            margin-right: 80px;
+            padding: 0;
+            border: solid black;
+            background-color: antiquewhite; /* Couleur de fond principale */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            animation: fadeIn 1s ease-in-out; /* Animation de fondu à l'entrée */
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out; /* Animation de fondu à l'entrée */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0; /* Définir l'opacité initiale à 0 */
+            animation: fadeInNav 1s ease-in-out forwards; /* Animation de fondu à l'entrée avec maintien de l'opacité */
+            animation-delay: 0.5s; /* Délai pour l'animation de chaque lien */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: auto;
+            animation: slideInUp 1s ease-in-out; /* Animation de glissement vers le haut à l'entrée */
+        }
+
+        /* Couleur qui va bien avec le marron */
+        .about-me-section { 
+            background-color: #b3367654; /* Marron clair */
+            border: 2px solid #8b4513; /* Bordure marron foncé */
+            padding: 2px; /* Ajoutez une marge intérieure pour laisser de l'espace entre le texte et la bordure */
+            width: 100; /* Alignement horizontal au centre */
+            animation: fadeInLeft 1s ease-in-out; /* Animation de fondu à l'entrée depuis la gauche */
+        }
+
+        .layout-about-me {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        /* Ajout d'une classe pour le paragraphe */
+        .last-paragraph {
+            margin-left: 30%; /* Ajoutez une marge au-dessus du dernier paragraphe */
+            animation: fadeInRight 1s ease-in-out; /* Animation de fondu à l'entrée depuis la droite */
+        }
+
+        /* Ajout d'une classe pour le paragraphe de la personnalité */
+        .personality-paragraph {
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out forwards; /* Animation de fondu et de glissement vers le haut à l'entrée avec maintien de l'opacité */
+            animation-delay: 0.5s; /* Délai pour l'animation de la personnalité */
+        }
+
+        /* Définition des animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInNav {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mathias Cousin</h1>
+        <p>CV détaillé numérique</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="formation.html">Formations</a>
+        <a href="compétences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+    </nav>
+
+    <section id="accueil"  style="text-align: center;">
+        <h2>Accueil</h2>
+        <img src="images/mon image d'accueil.jpg" alt="Description de l'image" style="float: left; margin-right: 20px; width: 250px;">
+        <p>Je suis actuellement étudiant en 2ème année de BUT Informatique à Villeneuve-d'Ascq. <br>
+         À la recherche d'un stage de fin d'année d'une durée de 10 semaines, je m'oriente vers les métiers du développement logiciel et du marché du web.
+         Mon objectif est de monter en compétence pour préparer une 3ième année en alternance <br> 
+         <br>
+         je possède une appétence pour la programmation orientée objet et possède une curiosité qui me pousse à m'intéresser aux diverses librairies trouvables sur internet</p>
+    </section>
+    
+    <section id="personnalite" style="text-align: center; background-color: #26061754;">
+        <h2>Ma Personnalité</h2>
+        <p>Je suis passionné par le monde de la technologie et du développement logiciel. Ma curiosité m'amène à explorer de nouveaux concepts et à relever des défis. Doté d'une approche analytique, je trouve satisfaction dans la résolution de problèmes complexes. Ma personnalité polyvalente me permet de m'adapter rapidement aux changements et d'apporter une contribution positive à toute équipe de projet.</p>
+    </section>
+
+    <section id="layout-about-me">
+        <section id="about-me" class="about-me-section" style="text-align: center;">
+            <h2>À Propos de Moi</h2>
+            <p><p> Je suis passionné d'escalade et de jeux vidéo, notamment les jeux de stratégie tour par tour. Ces deux activités occupent un peu de mon temps libre mais je suis avant tout quelqu'un de très sociable qui s'essaye aux pratiques et habitudes des autres.</p></p>
+        </section>
+    </section>
+    
+    <footer>
+        <p>2023 Cousin Mathias - CV Numérique<br><br>
+            email : mathias.cousin.etu@univ-lille.fr</li>
+        </p>
+    </footer>
+
+</body>
+
+</html>
