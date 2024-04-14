@@ -55,6 +55,24 @@
             animation: slideInUp 1s ease-in-out; /* Animation de glissement vers le haut à l'entrée */
         }
 
+        .project-resume {
+            display: flex; 
+            align-items: center; 
+            text-align: justify; 
+            padding: 20px; 
+            background-color: #b3367654; 
+            border: 2px solid #8b4513; 
+            padding: 20px; 
+            margin: 20px; 
+            animation: fadeInLeft 1s ease-in-out;
+        }
+
+        .project-view {
+            width: 80%; 
+            max-width: 350px; 
+            margin-right: 20px;
+        }
+
         /* Couleur qui va bien avec le marron */
         .about-me-section { 
             background-color: #b3367654; /* Marron clair */
@@ -62,6 +80,23 @@
             padding: 2px; /* Ajoutez une marge intérieure pour laisser de l'espace entre le texte et la bordure */
             width: 100; /* Alignement horizontal au centre */
             animation: fadeInLeft 1s ease-in-out; /* Animation de fondu à l'entrée depuis la gauche */
+        }
+
+        .contact img:not(.overview img) {
+            width: 1 em; 
+            height: 1em;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .overview * {
+            width: 200px;
+            text-align: center;
         }
 
         .layout-about-me {
@@ -153,20 +188,24 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <section id="display">
-        
-        <section id="formation"  style="text-align: center;">
-            <h2>Formation</h2>
-            <ul id="formation-list" style="list-style: none;">
-                <li>J'ai réalisé un BAC général obtenu mention Très Bien.</li>
-                <li>Spécialités : NSI et Mathématiques.</li>
-                <li>Option : Maths Expertes.</li>
-            </ul>
-            <img src="images/Lycée de l'escaut.jpg" alt="Lycée de l'Escaut, Valenciennes"> 
-        </section>
-        
-        <p class="last-paragraph">Lycée de l'Escaut, Valenciennes</p>
+    <section class="contact">
+        <div class="overview">
+            <p>Mathias Cousin</p>
+            <img src="images/mon image d'accueil.jpg" alt="Ma photo de CV">
+        </div>
+        <br>
+        <div class="mailto">
+            <img src="images/mailto.png">
+            <a href="mailto:mathias.cousin.etu@univ-lille.fr" alt="mailto">mathias.cousin.etu@univ-lille.fr</a>
+        </div>
+        <br>
+        <div class="resume-singlepage">
+            <a href="https://drive.google.com/file/d/1dut0sinQ4ZqSHoUjkePDJJhjtQ0-m_EJ/view?usp=sharing"><img src="images/resume.png" alt="single-page resume">resume</a>
+        </div>
     </section>
+    
+    
+    
         
     <footer>
         <p>2023-2024 Cousin Mathias - CV Numérique</p>
