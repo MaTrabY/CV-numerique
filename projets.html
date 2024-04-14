@@ -55,6 +55,24 @@
             animation: slideInUp 1s ease-in-out; /* Animation de glissement vers le haut à l'entrée */
         }
 
+        .project-resume {
+            display: flex; 
+            align-items: center; 
+            text-align: justify; 
+            padding: 20px; 
+            background-color: #b3367654; 
+            border: 2px solid #8b4513; 
+            padding: 20px; 
+            margin: 20px; 
+            animation: fadeInLeft 1s ease-in-out;
+        }
+
+        .project-view {
+            width: 80%; 
+            max-width: 350px; 
+            margin-right: 20px;
+        }
+
         /* Couleur qui va bien avec le marron */
         .about-me-section { 
             background-color: #b3367654; /* Marron clair */
@@ -150,10 +168,12 @@
         <a href="formation.html">Formations</a>
         <a href="compétences.html">Compétences</a>
         <a href="projets.html">Projets</a>
+        <a href="contact.html">Contact</a>
+        
     </nav>
 
-    <section id="gg-form" style="display: flex; align-items: center; text-align: justify; padding: 20px; background-color: #b3367654; border: 2px solid #8b4513; padding: 20px; margin: 20px 0; animation: fadeInLeft 1s ease-in-out;">
-        <img src="images/gg-form.png" alt="Image du projet" style="width: 80%; max-width: 350px; margin-right: 20px;">
+    <section id="gg-form" class="project-resume">
+        <img src="images/gg-form.png" alt="Image du projet" class="project-view">
         <div>
             <h2>Projet : Plan Mobilité pour les Salariés</h2>
             <p>
@@ -163,19 +183,45 @@
         </div>
     </section>
 
-    <section id="sql-project" style="background-color: #b3367654; border: 2px solid #8b4513; padding: 20px; margin: 20px 0; animation: fadeInLeft 1s ease-in-out;">
-        <div class="layout-about-me">
-            <div>
-                <img src="images/stats.png" alt="SQL Logo" style="width: 350px; margin-bottom: 10px; margin-right: 20px; margin-top: 10%;">
-            </div>
-            <div>
-                <h2>Projet SQL : Analyse des Jeux Olympiques</h2>
-                <p>
-                    Dans le cadre d'un projet SQL passionnant, j'ai eu l'opportunité de travailler sur une base de données des Jeux Olympiques.
-                    Mon rôle consistait à aérer, manipuler et extraire des données significatives de cette base afin de dresser une étude statistique approfondie.
-                    À travers des requêtes SQL complexes, j'ai analysé les performances des athlètes, les tendances au fil des années, et j'ai contribué à générer des rapports détaillés.
-                </p>
-            </div>
+    <section id="sql-project" class="project-resume">
+        <img src="images/stats.png" alt="SQL Logo" class="project-view">
+        <div>
+            <h2>Projet SQL : Analyse des Jeux Olympiques</h2>
+            <p>
+                Dans le cadre d'un projet SQL passionnant, j'ai eu l'opportunité de travailler sur une base de données des Jeux Olympiques.
+                Mon rôle consistait à aérer, manipuler et extraire des données significatives de cette base afin de dresser une étude statistique approfondie.
+                À travers des requêtes SQL complexes, j'ai analysé les performances des athlètes, les tendances au fil des années, et j'ai contribué à générer des rapports détaillés.
+            </p>
+        </div>
+    </section>
+
+    <section id="chasse-au-monstre" class="project-resume">
+        <div style="display: flex; flex-direction: column; width: 2000px;">
+            <img src="images/chasse-au-monstre-1.png" class="project-view" alt="Chasse au Monstre (vue monster)">
+            <img src="images/chasse-au-monstre-2.png" alt="Chasse au Monstre (vue hunter)" class="project-view">
+        </div>
+        <div>
+            <h2>Projet Java : Chasse au monstre</h2>
+            <p>
+                Le but de ce projet était de mettre en application le modèle MVC (Model-View-Controller) pour développer un jeu de chasse à 2 joueurs, 
+                le monstre souhaitant sortir du labyrinthe et laissant une trace de son passage sur chaque case, et le chasseur qui doit traquer le monstre 
+                en repérant les traces de celui-ci. Durant ce projet, j'ai pu élaborer des algorythmes complexes de recherche de chemin afin de mettre sur pied 
+                un ordinateur capable de prendre des décisions à la place du joueur. J'ai également appris à faire la liaison entre l'interface de jeu, le stockage 
+                des données et le traitement des informations sur des couches de codes bien distinctes en utilisant le principe du Single Responsability.  
+            </p>
+        </div>
+
+    </section>
+
+    <section id="shoot'em up multijoueur" class="project-resume">
+        <img src="images/Shoot'em up multijoueur.png" alt="shoot'em up multijoueur" class="project-view">
+        <div>
+            <h2> Projet JavaScript : Jeu "Shoot'em up" multijoueur</h2>
+            <p>
+                Le but de ce premier projet JavaScript était de réaliser un jeu multijoueur qui met en place des échanges entre un 
+                serveur web et un affichage client sur le navigateur web du joueur. Le jeu permet la présence de plusieurs joueurs sur
+                une même partie et effectue une sauvegarde des meilleurs scores réalisés sur le serveur.
+            </p>
         </div>
     </section>
     
@@ -183,9 +229,7 @@
     
         
     <footer>
-        <p>2023 Cousin Mathias - CV Numérique<br><br>
-            email : mathias.cousin.etu@univ-lille.fr</li>
-        </p>
+        <p>2023-2024 Cousin Mathias - CV Numérique</p>
     </footer>
 
 </body>
