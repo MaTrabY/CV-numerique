@@ -3,8 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mathias Cousin - CV</title>
+    <title>Présentation de Stage</title>
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        animation: fadeInLeft 1s ease-in-out;
+      }
+      h1 {
+        color: #0078d4;
+      }
+      .logo {
+        width: 100px;
+        margin: 10px;
+      }
+      .summary {
+        font-size: 18px;
+        margin: 20px 0;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+      .list-container {
+        background: #e3f2fd;
+        border: 2px solid black;
+        padding: 15px;
+        border-radius: 8px;
+        width: 40%;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+      li {
+        padding: 5px 0;
+      }
+
       body {
         font-family: Arial, sans-serif;
         margin-left: 80px;
@@ -54,24 +104,6 @@
         animation: slideInUp 1s ease-in-out; /* Animation de glissement vers le haut à l'entrée */
       }
 
-      .project-resume {
-        display: flex;
-        align-items: center;
-        text-align: justify;
-        padding: 20px;
-        background-color: #b3367654;
-        border: 2px solid #8b4513;
-        padding: 20px;
-        margin: 20px;
-        animation: fadeInLeft 1s ease-in-out;
-      }
-
-      .project-view {
-        width: 80%;
-        max-width: 350px;
-        margin-right: 20px;
-      }
-
       /* Couleur qui va bien avec le marron */
       .about-me-section {
         background-color: #b3367654; /* Marron clair */
@@ -79,23 +111,6 @@
         padding: 2px; /* Ajoutez une marge intérieure pour laisser de l'espace entre le texte et la bordure */
         width: 100; /* Alignement horizontal au centre */
         animation: fadeInLeft 1s ease-in-out; /* Animation de fondu à l'entrée depuis la gauche */
-      }
-
-      .contact img:not(.overview img) {
-        width: 1 em;
-        height: 1em;
-      }
-
-      .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-      }
-
-      .overview * {
-        width: 200px;
-        text-align: center;
       }
 
       .layout-about-me {
@@ -115,6 +130,20 @@
         opacity: 0;
         animation: fadeInUp 1s ease-in-out forwards; /* Animation de fondu et de glissement vers le haut à l'entrée avec maintien de l'opacité */
         animation-delay: 0.5s; /* Délai pour l'animation de la personnalité */
+      }
+
+      /* Ajout d'une classe pour la compétence */
+      .competence-item {
+        margin-bottom: 20px;
+        animation: fadeInUp 1s ease-in-out forwards; /* Animation de fondu et de glissement vers le haut à l'entrée avec maintien de l'opacité */
+      }
+
+      #logo-Dep {
+        width: 200px;
+      }
+
+      #img-Dej-du-Nord {
+        margin-top: 5%;
       }
 
       /* Définition des animations */
@@ -179,7 +208,6 @@
       }
     </style>
   </head>
-
   <body>
     <header>
       <h1>Mathias Cousin</h1>
@@ -195,27 +223,67 @@
       <a href="contact.html">Contact</a>
     </nav>
 
-    <section class="contact">
-      <div class="overview">
-        <p>Mathias Cousin</p>
-        <img src="images/mon image d'accueil.jpg" alt="Ma photo de CV" />
-      </div>
-      <br />
-      <div class="mailto">
-        <img src="images/mailto.png" />
-        <a href="mailto:mathias.cousin.etu@univ-lille.fr" alt="mailto"
-          >mathias.cousin.etu@univ-lille.fr</a
-        >
-      </div>
-      <br />
-      <div class="resume-singlepage">
-        <a
-          href="https://drive.google.com/file/d/1dut0sinQ4ZqSHoUjkePDJJhjtQ0-m_EJ/view?usp=sharing"
-          ><img src="images/resume.png" alt="single-page resume" />resume</a
-        >
-      </div>
-    </section>
+    <div class="container">
+      <h1>Développement d’une application mobile sous Power Platform</h1>
+      <img
+        id="logo-Dep"
+        src="images/Logo-Dep-Nord.png"
+        alt="Logo Département du Nord"
+        class="logo"
+      />
+      <p><strong>Durée :</strong> 03 juin 2024 – 31 juillet 2024</p>
+      <p><strong>Entreprise :</strong> Département du Nord, Lille</p>
 
+      <div class="summary">
+        <p>
+          Au cours de mon stage, j’ai développé une application mobile de
+          gestion d’événements internes avec <strong>Power Apps</strong>. Cette
+          application permet aux employés d’organiser des rassemblements non
+          professionnels, simplifiant la création et la gestion des événements.
+          L’application inclut un système de vote, une intégration à
+          <strong>Microsoft Teams</strong> et un stockage de données via
+          <strong>SharePoint</strong>. J’ai également automatisé certains
+          processus avec <strong>Power Automate</strong> et optimisé l’ergonomie
+          mobile. Une documentation technique a été rédigée pour assurer la
+          continuité du projet.
+        </p>
+      </div>
+
+      <div class="flex-container">
+        <div class="list-container">
+          <h3>Compétences techniques acquises</h3>
+          <ul>
+            <li>Développement en low-code avec Power Platform</li>
+            <li>Modélisation de bases de données avec SharePoint</li>
+            <li>Automatisation avec Power Automate</li>
+            <li>UI/UX et accessibilité numérique</li>
+            <li>Gestion de projet en équipe</li>
+          </ul>
+        </div>
+        <div class="list-container">
+          <h3>Outils et langages utilisés</h3>
+          <ul>
+            <li>Power Apps</li>
+            <li>Power Automate</li>
+            <li>SharePoint</li>
+            <li>Power Fx</li>
+            <li>Microsoft Teams</li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        Ce stage à été l'occasion pour moi de découvrir aussi le milieu du
+        logiciel propriétaire qui est aussi très présent dans les entreprises de
+        grande échelle. Ces logiciels peuvent être également une source d'idée
+        supplémentaire pour la réalisation d'interface UX adapté pour le plus
+        grand nombre d'utilisateur
+      </p>
+      <img
+        id="img-Dej-du-Nord"
+        src="images/Dej-du-Nord-screenshot.png"
+        alt="Image de mon projet Power Apps"
+      />
+    </div>
     <footer>
       <p>2024-2025 Cousin Mathias - CV Numérique</p>
     </footer>
